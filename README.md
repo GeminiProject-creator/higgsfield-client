@@ -15,14 +15,14 @@ Before using the client, set your API credentials as environment variables. You 
 **Option 1: Single Key**
 
 ```bash
-export HF_KEY="your-api-key:your-api-secret"
+export HF_KEY="botsbuzz:563f974d-802c-4998-8376-c5dc7b394d46"
 ```
 
 **Option 2: API Key + Secret**
 
 ```bash
-export HF_API_KEY="your-api-key"
-export HF_API_SECRET="your-api-secret"
+export HF_API_KEY="botsbuzz"
+export HF_API_SECRET="563f974d-802c-4998-8376-c5dc7b394d46"
 ```
 
 Get your credentials from the [Higgsfield Cloud](https://cloud.higgsfield.ai/).

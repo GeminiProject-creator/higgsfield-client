@@ -15,14 +15,28 @@ Before using the client, set your API credentials as environment variables. You 
 **Option 1: Single Key**
 
 ```bash
-export HF_KEY="your-api-key:your-api-secret"
+export HF_KEY="563f974d-802c-4998-8376-c5dc7b394d46:a83b2927fac8d102e7e26258062ba1d3cfe1d1b730aed3978527a700ca1abd55:Set up this project to use the Higgsfield API with Seedance 2.5.
+
+Read the official SDK documentation at https://docs.higgsfield.ai/docs/how-to/sdk and the model documentation at https://console.higgsfield.ai/models/bytedance/seedance-2.5/text-to-video/api-reference before implementing.
+
+1. Use the project's existing language and package manager. Install @higgsfield/client for TypeScript or higgsfield-client for Python, plus an environment-file loader if needed.
+2. Add HF_CREDENTIALS (TypeScript) or HF_KEY (Python) to .env.local in key-id:key-secret format, and make sure the file is ignored by Git. If you need the key, ask me to enter it locally. Never ask me to paste it into chat, and never read, print, log, or commit it. Keep credentials server-side; load them at runtime without exposing their values.
+3. Create an index.ts or main.py example using the official SDK's subscribe method with model bytedance/seedance-2.5/text-to-video. Use the prompt "A cinematic scene at sunset", duration 5, resolution 720p, and aspect ratio 16:9. Wait for completion and output the generated video URL. Handle failed, canceled, or moderated requests without claiming success.
+4. Run the example and verify it completes and returns a video URL. This makes a billable generation request. Do not claim the setup works unless you ran it successfully; if execution is blocked, report the blocker."
 ```
 
 **Option 2: API Key + Secret**
 
 ```bash
-export HF_API_KEY="your-api-key"
-export HF_API_SECRET="your-api-secret"
+export HF_API_KEY="563f974d-802c-4998-8376-c5dc7b394d46:a83b2927fac8d102e7e26258062ba1d3cfe1d1b730aed3978527a700ca1abd55"
+export HF_API_SECRET="Set up this project to use the Higgsfield API with Seedance 2.5.
+
+Read the official SDK documentation at https://docs.higgsfield.ai/docs/how-to/sdk and the model documentation at https://console.higgsfield.ai/models/bytedance/seedance-2.5/text-to-video/api-reference before implementing.
+
+1. Use the project's existing language and package manager. Install @higgsfield/client for TypeScript or higgsfield-client for Python, plus an environment-file loader if needed.
+2. Add HF_CREDENTIALS (TypeScript) or HF_KEY (Python) to .env.local in key-id:key-secret format, and make sure the file is ignored by Git. If you need the key, ask me to enter it locally. Never ask me to paste it into chat, and never read, print, log, or commit it. Keep credentials server-side; load them at runtime without exposing their values.
+3. Create an index.ts or main.py example using the official SDK's subscribe method with model bytedance/seedance-2.5/text-to-video. Use the prompt "A cinematic scene at sunset", duration 5, resolution 720p, and aspect ratio 16:9. Wait for completion and output the generated video URL. Handle failed, canceled, or moderated requests without claiming success.
+4. Run the example and verify it completes and returns a video URL. This makes a billable generation request. Do not claim the setup works unless you ran it successfully; if execution is blocked, report the blocker."
 ```
 
 Get your credentials from the [Higgsfield Cloud](https://cloud.higgsfield.ai/).
